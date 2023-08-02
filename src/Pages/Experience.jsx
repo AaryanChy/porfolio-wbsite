@@ -13,7 +13,7 @@ const Experience = () => {
     <div name='skills' className='w-full h-screen'>
       {/* container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center '>
-        <div className='max-w-md my-32 '>
+        <div className='max-w-md mt-2 '>
           <p className='text-4xl font-bold border-b-4 border-pink-600'>
             Experience
           </p>
@@ -22,7 +22,7 @@ const Experience = () => {
           </p>
         </div>
         {/* container for all the icons */}
-        <div className='w-full grid grid-cols-2 gap-5 sm:grid-cols-4 text-center py-6 mb-8'>
+        <div className='w-full grid grid-cols-2 gap-5 sm:grid-cols-4 text-center py-24 mb-8 -my-20'>
           <div className='shadow-md shadow-black hover:scale-110 duration-700  border rounded-2xl'>
             <img src={Html} className=' w-20 mx-auto py-4' alt='html Logo' />
             <p>Html</p>

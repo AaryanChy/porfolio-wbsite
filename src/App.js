@@ -5,21 +5,25 @@ import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import Navbar from "./Components/Navbar";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+
 function App() {
   return (
     <div className='App'>
       <Router>
         <Navbar />
-        {/* <Home />
+        <Home />
         <Projects />
         <Experience />
-        <About /> */}
-        <Routes>
-          <Route path='/home' element={<Home />}></Route>
+        <Contact />
+        <About />
+        {/* <Routes>
+          <Route path='/' element={<Home />}></Route>
           <Route path='/projects' element={<Projects />}></Route>
           <Route path='/experience' element={<Experience />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
           <Route path='/about' element={<About />}></Route>
-        </Routes>
+        </Routes> */}
       </Router>
     </div>
   );

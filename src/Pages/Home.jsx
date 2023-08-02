@@ -7,7 +7,7 @@ const Home = () => {
     setShow(true);
   }, []);
   return (
-    <div className='w-full h-screen'>
+    <div className='w-full h-screen' name='home'>
       {/* Container  */}
 
       <div className=' flex flex-col w-full  px-7 md:flex justify-center md:items-center h-full'>

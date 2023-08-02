@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import ReorderIcon from "@mui/icons-material/Reorder";
 import ClearIcon from "@mui/icons-material/Clear";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -23,29 +23,27 @@ const Navbar = () => {
       </div>
       {/* Nav links */}
       <div className='hidden gap-10 md:flex text-white'>
-        <Link
-          activeClass='active'
-          to='/home'
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
+        <Link to='home' spy={true} smooth={true} offset={-70} duration={700}>
           Home
         </Link>
         <Link
-          activeClass='active'
-          to='/projects'
+          to='projects'
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500}
+          duration={700}
         >
           Projects
         </Link>
-        <Link to='/experience'>Experience</Link>
-        <Link to='/contact'>Contact</Link>
-        <Link to='/about'>About</Link>
+        <Link to='skills' spy={true} smooth={true} offset={-70} duration={700}>
+          Experience
+        </Link>
+        <Link to='contact' spy={true} smooth={true} offset={-70} duration={700}>
+          Contact
+        </Link>
+        <Link to='about' spy={true} smooth={true} offset={-70} duration={700}>
+          About
+        </Link>
       </div>
 
       {/* hamburger */}
@@ -83,7 +81,7 @@ const Navbar = () => {
 
       {/* social Icons  */}
 
-      <div className='hidden md:flex flex-col absolute top-[20rem] left-0'>
+      <div className='hidden lg:flex flex-col absolute top-[20rem] left-0'>
         <ul>
           <li>
             <Link
